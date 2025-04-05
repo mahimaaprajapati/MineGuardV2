@@ -1,0 +1,1 @@
+model = joblib.load("C:/Users/Dell/MineGuardV2/mineguard_backend/random_forest_model.pkl")
