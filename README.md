@@ -1,55 +1,70 @@
-# MineGuard_model
-MineGuard is a real-time, AI-integrated geospatial safety system that ensures miner safety and disaster preparedness. It combines satellite data, remote sensing, predictive analytics, and emergency systems to proactively monitor, analyze, and respond to hazardous mining conditions.
-🚀 Key Features
-🔍 Real-Time Hazard Prediction
-Predicts mine collapses, landslides, and seismic activities using Google Earth Engine, Sentinel-2, Landsat, and historical mining accident data.
+# Getting Started with Create React App
 
-🌫️ Air Quality & Weather Monitoring
-Uses OpenWeatherMap API to track AQI and weather conditions, identifying gas leaks (like methane or CO) and dust pollution risks in real-time.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-📡 Seismic & Earthquake Alerts
-Integrated with USGS API to analyze earthquake and seismic activities affecting mining zones.
+## Available Scripts
 
-🆘 Emergency SOS & Rapid Response
-One-tap SOS alert system using geolocation to alert nearby rescue teams and suggest immediate AI-powered safety actions.
+In the project directory, you can run:
 
-🧠 AI-Based Health & Risk Assessment
-Flask-based backend offers AI health consultation and risk prediction models built with Python, Scikit-learn, Pandas, GeoPandas.
+### `npm start`
 
-📊 Interactive Dashboard
-Dynamic React-based web dashboard for live hazard heatmaps, incident reports, and disaster segmentation.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-📢 Incident Reporting & Escalation
-A secure platform for miners to report safety issues, with automated escalation to higher authorities if ignored.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-⚙️ Tech Stack
-Frontend: React.js
+### `npm test`
 
-Backend: Python Flask
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-AI/ML: Python, Scikit-learn, Pandas, GeoPandas
+### `npm run build`
 
-Geospatial Tools: Google Earth Engine, Sentinel-2, Landsat
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-APIs Used:
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-OpenWeatherMap API (AQI & Weather)
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-USGS Earthquake API (Seismic Activity)
+### `npm run eject`
 
-IDE & Tools: VS Code, Figma, Builder.io
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-Hosting: Render / Firebase (optional)
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-🗂️ Data Sources
-ISMN ENVIS – Mining Accidents in India
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-USGS Earthquake Data
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-Sentinel-2 & Landsat Satellite Imagery
+## Learn More
 
-Government Open Data Portals
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-🎯 Project Goal
-To build an intelligent, proactive system that protects miners' lives, bridges the gap between ground reality and authorities, and leverages modern AI and geospatial technology for safety, transparency, and resilience in the mining sector.
+To learn React, check out the [React documentation](https://reactjs.org/).
 
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

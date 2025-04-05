@@ -1,0 +1,171 @@
+/* 🗺️ Map Container */
+.map-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  /*  Search Box Styling */
+  .search-container {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    padding: 12px 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .search-input {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 280px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 14px;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  .search-input:focus {
+    border-color: rgb(151, 216, 254);
+  }
+  
+  .search-btn {
+    background: rgb(0, 150, 255);
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    margin-left: 8px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .search-btn:hover {
+    background: rgb(0, 120, 220);
+  }
+  
+  /* ⚠️ Error Message Styling */
+  .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 65px;
+    background: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* 📊 Prediction Data Panel */
+  .prediction-panel {
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.85);
+    color: white;
+    padding: 14px;
+    border-radius: 10px;
+    width: 260px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .prediction-panel h3 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #f9a825; /* Yellow Accent */
+  }
+  
+  .prediction-panel p {
+    margin: 6px 0;
+    line-height: 1.4;
+  }
+  
+  /* 🌐 Responsive Design */
+  @media screen and (max-width: 768px) {
+    .search-container {
+      flex-direction: column;
+      width: 90%;
+      top: 10px;
+      padding: 10px;
+    }
+  
+    .search-input {
+      width: 100%;
+      margin-bottom: 8px;
+    }
+  
+    .search-btn {
+      width: 100%;
+    }
+  
+    .prediction-panel {
+      top: auto;
+      bottom: 20px;
+      right: 50%;
+      transform: translateX(50%);
+      width: 90%;
+      text-align: center;
+    }
+  }
+  
+  /* 🌍 Map Marker Styling */
+  .leaflet-container .leaflet-marker-icon {
+    background-color: #00aaff;  /* Customize the marker's color */
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    width: 35px;
+    height: 35px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* 🗺️ Add Styles for Map Loading Spinner */
+  .leaflet-container .leaflet-loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2000;
+  }
+  
+  /* 🌍 Map Marker Popup Styling */
+  .leaflet-popup-content {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+  }
+  
+  /* 🌦️ Prediction Data Panel Style (Mobile friendly) */
+  @media screen and (max-width: 480px) {
+    .prediction-panel {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 90%;
+      font-size: 12px;
+      padding: 8px;
+    }
+  }
+  
